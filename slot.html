@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+
+            width: 1000px;
+            height: 620px;
+            display: flex;
+            background-color: rgb(240, 168, 168);
+            border-radius: 20px;
+            /* background-color:rgb(241, 142, 142); */
+        }
+
+        #bottomwidth {
+            width: 1375px;
+
+        }
+
+        .container-left {
+            margin-left: 30px;
+            padding: 10px 20px 10px 20px;
+
+            width: 750px;
+            height: 480px;
+            background-color: rgb(158, 223, 228);
+            border-radius: 10px;
+
+        }
+
+        .container-right {
+            margin-top: 50px;
+            margin-left: 40px;
+        }
+
+        .dollar {
+            width: 130px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: gray;
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        .photo img {
+            margin-top: 5px;
+            width: 40px;
+            height: 40px;
+        }
+
+        #space {
+            background-color: rgb(109, 161, 240);
+        }
+
+        #bottom {
+            height: 10px;
+            background-color: gray;
+        }
+
+        .count {
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .add {
+            height: 40px;
+            margin-top: 5px;
+            margin-left: 5px;
+            width: 40px;
+            background-color: white;
+        }
+
+        #runnn {
+            width: 150px;
+        }
+
+        #restart {
+            width: 150px;
+        }
+
+        .col-1 {
+            width: 50px;
+            height: 50px;
+        }
+
+        img {
+            width: 100px;
+            height: 80px;
+            margin: 10px auto 0px;
+
+            text-align: center;
+            line-height: 50px;
+        }
+
+        h3 {
+            width: 130px;
+            margin: 0px auto;
+            text-align: center;
+        }
+
+        #confirmex {
+            width: 100px;
+            margin: auto;
+
+        }
+
+        #spacex {
+            background-color: rgb(109, 161, 240);
+            text-align: center;
+            line-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-2">
+        <div class="container-left mt-5">
+            <div class="row">
+                <div class="col-2 ">
+                    <img id="x5" src="image/apple.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x6" src="image/dollar.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x7" src="image/banana.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x8" src="image/orange.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x9" src="image/watermelon.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x10" src="image/grape.png">
+                </div>
+
+            </div>
+            <div class="row justify-content-between ">
+                <div class="col-2">
+                    <img id="x4" src="image/banana.png">
+                </div>
+                <div class="col-8 mt-2" id="space">
+
+                </div>
+                <div class="col-2">
+                    <img id="x11" src="image/apple.png">
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-2">
+                    <img id="x3" src="image/watermelon.png">
+                </div>
+                <div class="col-2" id="space">
+
+                </div>
+                <div class="col-4" id="space">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">錢包</span>
+                        </div>
+                        <input type="text" id="money" class="form-control text-right" placeholder="0"
+                            aria-label="Username" aria-describedby="basic-addon1" disabled>
+                    </div>
+                    <div class="input-group mt-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">獎金</span>
+                        </div>
+                        <input type="text" id="bonus" class="form-control text-right" placeholder="0"
+                            aria-label="Username" aria-describedby="basic-addon1" disabled>
+                    </div>
+                </div>
+                <div class="col-2" id="space">
+
+                </div>
+                <div class="col-2">
+                    <img id="x12" src="image/banana.png">
+                </div>
+            </div>
+            <div class="row justify-content-between ">
+                <div class="col-2">
+                    <img id="x2" src="image/grape.png">
+                </div>
+                <div class="col-2" id="space">
+
+                </div>
+                <div class="col-4" id="spacex">
+                    <button type="button" id="confirmex" class="btn btn-lg btn-warning">Bonus</button>
+                </div>
+                <div class="col-2" id="space">
+
+                </div>
+                <div class="col-2">
+                    <img id="x13" src="image/orange.png">
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-2 ">
+                    <img id="x1" src="image/orange.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x18" src="image/banana.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x17" src="image/apple.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x16" src="image/watermelon.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x15" src="image/dollar.png">
+                </div>
+                <div class="col-2 ">
+                    <img id="x14" src="image/grape.png">
+                </div>
+            </div>
+            <div class="row justify-content-around mt-5">
+                <button type="button" id="runnn" class="btn btn-lg btn-primary mr-5">GO !</button>
+                <button type="button" id="restart" class="btn btn-lg btn-primary">Restart</button>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="container-right">
+            <div class="row">
+                <div class="dollar">$500</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/dollar.png">
+                </div>
+                <div>
+                    <input class="count" id="count1">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet1">^</button>
+            </div>
+            <div class="row mt-2">
+                <div class="dollar">$300</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/grape.png">
+                </div>
+                <div>
+                    <input class="count" id="count2">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet2">^</button>
+            </div>
+            <div class="row mt-2">
+                <div class="dollar">$200</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/watermelon.png">
+                </div>
+                <div>
+                    <input class="count" id="count3">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet3">^</button>
+            </div>
+            <div class="row mt-2">
+                <div class="dollar">$100</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/apple.png">
+                </div>
+                <div>
+                    <input class="count" id="count4">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet4">^</button>
+            </div>
+            <div class="row mt-2">
+                <div class="dollar">$50</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/orange.png">
+                </div>
+                <div>
+                    <input class="count" id="count5">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet5">^</button>
+            </div>
+            <div class="row mt-2">
+                <div class="dollar">$10</div>
+            </div>
+            <div class="row">
+                <div class="photo">
+                    <img src="image/banana.png">
+                </div>
+                <div>
+                    <input class="count" id="count6">
+                </div>
+                <button class="add btn-outline-secondary" type="button" id="bet6">^</button>
+
+            </div>
+            <div class="row">
+                <h3 class="mt-2 ml-0"> 每注 $200</h3>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <div class="row justify-content-around" id="bottomwidth">
+        <div class="col-1" id="bottom">
+
+        </div>
+        <div class="col-1" id="bottom">
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            var i = 1;
+            var arr = [];
+            var b = 0;
+            var x = true;
+            var click1 = 0, click2 = 0, click3 = 0, click4 = 0, click5 = 0, click6 = 0;
+
+            $("#money").val("2000");
+            for (var i = 1; i <= 6; i++) {
+                $("#count" + i).val("0");
+            }
+            $("#bonus").val("0");
+
+
+            $("#runnn").on("click", function () {
+                if (click1 == 0 && click2 == 0 && click3 == 0 && click4 == 0 && click5 == 0 && click6 == 0) {
+                    alert("請下注~");
+                } else {
+
+                    $("#runnn").attr('disabled', 'disabled');
+                    //click1 = 0, click2 = 0, click3 = 0, click4 = 0, click5 = 0, click6 = 0;
+
+                    var maxNum = 18;
+                    var minNum = 0;
+                    var time = 0;
+                    var n = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+                    console.info(n);
+
+                    // -------------------------------------------------------
+
+
+                    var handle = setInterval(function () {
+                        $("#x" + i).css("box-shadow", "0 0 10px 5px red");
+                        $("#x" + (i - 1)).css("box-shadow", "none");
+
+                        if (i == 19) {
+                            //clearInterval();
+                            time += 1;
+                            i = 0;
+                            console.info(time);
+
+                            //return setInterval();
+                        }
+                        if (time == 4 && i == n) {
+                            $("#x" + n).css("box-shadow", "0 0 10px 5px red");
+                            clearInterval(handle);
+                            $("#runnn").removeAttr('disabled');
+                            var now = $("#x" + n).attr("src");
+                            console.info(now);
+
+                            $("#bonus").val(end(now));
+                        }
+                        i++;
+                    }, 50);
+                }
+            })
+
+
+            if ($("#money").val() < 0) {
+                alert("沒$囉~ 課金?");
+            } else {
+                $("#bet1").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click1++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count1").val(click1);
+                    }
+
+                })
+                $("#bet2").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click2++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count2").val(click2);
+                    }
+
+                })
+                $("#bet3").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click3++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count3").val(click3);
+                    }
+
+                })
+                $("#bet4").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click4++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count4").val(click4);
+                    }
+
+                })
+                $("#bet5").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click5++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count5").val(click5);
+                    }
+
+                })
+                $("#bet6").on("click", function () {
+                    if ($("#money").val() < 200) {
+                        alert("無法加注囉~");
+                    } else {
+                        var nowmoney = $("#money").val();
+                        click6++;
+                        $("#money").val(nowmoney - 200);
+                        $("#count6").val(click6);
+                    }
+
+                })
+
+            }
+
+            function end(now) {
+                var bonus = 0;
+                if (now == "image/dollar.png") {
+                    bonus = click1 * 500;
+                } else if (now == "image/grape.png") {
+                    bonus += bonus;
+                    bonus = click2 * 300;
+                } else if (now == "image/watermelon.png") {
+                    bonus += bonus;
+                    bonus = click3 * 200;
+                } else if (now == "image/apple.png") {
+                    bonus += bonus;
+                    bonus = click4 * 100;
+                } else if (now == "image/orange.png") {
+                    bonus += bonus;
+                    bonus = click5 * 50;
+                } else if (now == "image/banana.png") {
+                    bonus += bonus;
+                    bonus = click6 * 10;
+                }
+                console.info(bonus);
+                for (var j = 1; j <= 6; j++) {
+                    $("#count" + j).val("0");
+                }
+                click1 = 0, click2 = 0, click3 = 0, click4 = 0, click5 = 0, click6 = 0;
+
+                return bonus;
+
+            }
+
+            $("#confirmex").on("click", function () {
+                var bonusss = $("#bonus").val();
+                var moneyyy = $("#money").val();
+                var total = 0
+
+                total = parseInt(bonusss) + parseInt(moneyyy);
+                console.info(bonusss);
+                console.info(money);
+                $("#money").val(total);
+                $("#bonus").val("0");
+            })
+
+            $("#restart").on("click", function () {
+                $("#money").val("2000");
+            })
+
+        })
+
+    </script>
+
+
+</body>
+
+</html>
